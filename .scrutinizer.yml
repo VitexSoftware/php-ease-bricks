@@ -1,0 +1,36 @@
+filter:
+    excluded_paths:
+        - 'tests/*'
+        - 'vendor/*'
+        - 'Examples/*'
+tools:
+    php_code_sniffer:
+        config:
+            standard: "PSR2"
+
+checks:
+    php:
+        code_rating: true
+        duplication: true
+        
+build:
+    environment:
+        php:
+            version: 7.1.0
+        postgresql: true
+    dependencies:
+        before:
+            - mysql -u root -e "CREATE DATABASE easetest"
+            - mysql -u root -e "GRANT ALL PRIVILEGES ON easetest.* TO easetest@localhost IDENTIFIED BY 'easetest'"
+            - sudo -u postgres bash -c "psql -c \"CREATE USER easetest WITH PASSWORD 'easetest';\""
+            - sudo -u postgres bash -c "psql -c \"create database easetest with owner easetest encoding='utf8' template template0;\""
+            - composer self-update
+            - composer install --no-interaction
+            - ./vendor/bin/phinx migrate  --configuration tests/phinx.yml         
+    tests:
+        override:
+            -
+                command: './vendor/bin/phpunit --coverage-clover=clover.log'
+                coverage:
+                    file: 'clover.log'
+                    format: 'clover'

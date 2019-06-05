@@ -1,0 +1,398 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ease Framework\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-27 18:13+0200\n"
+"PO-Revision-Date: 2018-06-27 18:14+0200\n"
+"Last-Translator: Vitex <info@vitexsoftware.cz>\n"
+"Language-Team: Vitex Software <info@vitexsoftware.cz>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: src\n"
+"X-Poedit-SearchPath-1: Examples\n"
+
+#: Examples/selectlang.php:13
+msgid "Czech"
+msgstr "Czech"
+
+#: Examples/selectlang.php:13
+msgid "English"
+msgstr "English"
+
+#: Examples/selectlang.php:16
+msgid "Hallo"
+msgstr "Hallo"
+
+#: src/Ease/ui/MainMenu.php:34
+msgid "Scripts"
+msgstr "Scripts"
+
+#: src/Ease/ui/MainMenu.php:36
+msgid "Invoice matching (Take so long)"
+msgstr "Invoice matching (Take so long)"
+
+#: src/Ease/ui/MainMenu.php:41
+msgid "Oders"
+msgstr "Oders"
+
+#: src/Ease/ui/MainMenu.php:44
+msgid "Orders TODO"
+msgstr "Orders TODO"
+
+#: src/Ease/ui/MainMenu.php:53
+msgid "Proposal"
+msgstr "Proposal"
+
+#: src/Ease/ui/MainMenu.php:55 src/Ease/ui/MainMenu.php:69
+msgid "Pricelist"
+msgstr "Pricelist"
+
+#: src/Ease/ui/MainMenu.php:59
+msgid "Users"
+msgstr "Users"
+
+#: src/Ease/ui/MainMenu.php:61
+msgid "New user"
+msgstr "New user"
+
+#: src/Ease/ui/MainMenu.php:62
+msgid "User overview"
+msgstr "User overview"
+
+#: src/Ease/ui/MainMenu.php:78
+msgid "VoIP"
+msgstr "VoIP"
+
+#: src/Ease/ui/MainMenu.php:81
+msgid "Domains"
+msgstr "Domains"
+
+#: src/Ease/ui/MainMenu.php:83
+msgid "Products"
+msgstr "Products"
+
+#: src/Ease/ui/MainMenu.php:88
+msgid "Traffic"
+msgstr "Traffic"
+
+#: src/Ease/ui/MainMenu.php:89
+msgid "Stats"
+msgstr "Stats"
+
+#: src/Ease/ui/MainMenu.php:93
+msgid "Orders"
+msgstr "Orders"
+
+#: src/Ease/ui/MainMenu.php:95
+msgid "New order"
+msgstr "New order"
+
+#: src/Ease/ui/MainMenu.php:97
+msgid "My orders"
+msgstr "My orders"
+
+#: src/Ease/ui/PageBottom.php:31
+msgid "Intranet"
+msgstr "Intranet"
+
+#: src/Ease/ui/PageBottom.php:37
+msgid "Aplikace"
+msgstr "Aplikace"
+
+#: src/Ease/ui/PageBottom.php:43
+msgid "Služby"
+msgstr "Služby"
+
+#: src/Ease/ui/PageBottom.php:48
+msgid "Server housing"
+msgstr "Server housing"
+
+#: src/Ease/ui/PageBottom.php:50
+msgid "Virtuální servery"
+msgstr "Virtuální servery"
+
+#: src/Ease/ui/PageBottom.php:53
+msgid "Dokumentace"
+msgstr "Dokumentace"
+
+#: src/Ease/ui/PageBottom.php:59
+msgid "Spřízněné"
+msgstr "Spřízněné"
+
+#: src/Ease/ui/PageBottom.php:62
+msgid "Murka.cz"
+msgstr "Murka.cz"
+
+#: src/Ease/ui/PageBottom.php:64
+msgid "CZFree.Net"
+msgstr "CZFree.Net"
+
+#: src/Ease/ui/PageBottom.php:67
+msgid "Více"
+msgstr "Více"
+
+#: src/Ease/ui/PageBottom.php:70
+msgid "O nás"
+msgstr "O nás"
+
+#: src/Ease/ui/PageBottom.php:71
+msgid "Cenník prací"
+msgstr "Cenník prací"
+
+#: src/Ease/ui/PageBottom.php:73
+msgid "Kontakty"
+msgstr "Kontakty"
+
+#: src/Ease/ui/PageBottom.php:81
+msgid "Version"
+msgstr "Version"
+
+#: src/Ease/ui/PageBottom.php:81
+msgid "&copy; 2015-2018 Spoje.Net s.r.o."
+msgstr "&copy; 2015-2018 Spoje.Net s.r.o."
+
+#: src/Ease/ui/TWBSwitch.php:33
+msgid "Yes"
+msgstr "Yes"
+
+#: src/Ease/ui/TWBSwitch.php:36
+msgid "No"
+msgstr "No"
+
+#~ msgid "debug"
+#~ msgstr "debug"
+
+#~ msgid "info"
+#~ msgstr "info"
+
+#~ msgid "success"
+#~ msgstr "success"
+
+#~ msgid "warning"
+#~ msgstr "warning"
+
+#~ msgid "error"
+#~ msgstr "error"
+
+#~ msgid "You enter: %s as text."
+#~ msgstr "You enter: %s as text."
+
+#~ msgid "Please enter any text"
+#~ msgstr "Please enter any text"
+
+#~ msgid "You enter: %s as number."
+#~ msgstr "You enter: %s as number."
+
+#~ msgid "Please enter any number"
+#~ msgstr "Please enter any number"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Default text"
+#~ msgstr "tDefault text"
+
+#~ msgid "Text hint"
+#~ msgstr "Text hint"
+
+#~ msgid "Number"
+#~ msgstr "Number"
+
+#~ msgid "Number hint"
+#~ msgstr "Number hint"
+
+#~ msgid "Modal Example"
+#~ msgstr "Modal Example"
+
+#~ msgid "caution"
+#~ msgstr "caution"
+
+#~ msgid "Twitter Bootstrap"
+#~ msgstr "Twitter Bootstrap"
+
+#~ msgid "Back to examples"
+#~ msgstr "Back to examples"
+
+#~ msgid "Homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "LinkQuick"
+#~ msgstr "LinkQuick"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "Settings"
+#~ msgstr "Settings"
+
+#~ msgid "Shutdown"
+#~ msgstr "Shutdown"
+
+#~ msgid "Informace"
+#~ msgstr "Informace"
+
+#~ msgid "System log"
+#~ msgstr "System log"
+
+#~ msgid "Hosting"
+#~ msgstr "Hosting"
+
+#~ msgid "Twitter bootrstrap Tabs Example"
+#~ msgstr "Twitter bootrstrap Tabs Example"
+
+#~ msgid "Example Web Page"
+#~ msgstr "Example Web Page"
+
+#~ msgid "Status messages"
+#~ msgstr "Status messages"
+
+#~ msgid "Ease Framework - Usage examples"
+#~ msgstr "Ease Framework - Usage examples"
+
+#~ msgid "Ul One"
+#~ msgstr "Ul One"
+
+#~ msgid "Ul Two"
+#~ msgstr "Ul Two"
+
+#~ msgid "Ul Three"
+#~ msgstr "Ul Three"
+
+#~ msgid "Ol One"
+#~ msgstr "Ol One"
+
+#~ msgid "Ol Two"
+#~ msgstr "Ol Two"
+
+#~ msgid "Ol Three"
+#~ msgstr "Ol Three"
+
+#~ msgid " not an folder. Current directory:"
+#~ msgstr " not an folder. Current directory:"
+
+#~ msgid " not an readable folder. Current directory:"
+#~ msgstr " not an readable folder. Current directory:"
+
+#~ msgid " not an writeable folder. Current directory:"
+#~ msgstr " not an writeable folder. Current directory:"
+
+#~ msgid "Message %s was sent to %s"
+#~ msgstr "Message %s was sent to %s"
+
+#~ msgid "Message %s, for %s was not sent because of %s"
+#~ msgstr "Message %s, for %s was not sent because of %s"
+
+#~ msgid "Sign in first please"
+#~ msgstr "Sign in first please"
+
+#~ msgid "UpdateToSQL: Missing data"
+#~ msgstr "UpdateToSQL: Missing data"
+
+#~ msgid "Unimplemented Database type"
+#~ msgstr "Unimplemented Database type"
+
+#~ msgid "Previous"
+#~ msgstr "Previous"
+
+#~ msgid "Next"
+#~ msgstr "Next"
+
+#~ msgid "Close"
+#~ msgstr "Close"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "Switch navigation"
+#~ msgstr "Switch navigation"
+
+#~ msgid "Click to hide messages"
+#~ msgstr "Click to hide messages"
+
+#~ msgid "missing login"
+#~ msgstr "missing login"
+
+#~ msgid "missing password"
+#~ msgstr "missing password"
+
+#~ msgid "invalid password"
+#~ msgstr "invalid password"
+
+#~ msgid "user %s does not exist"
+#~ msgstr "user %s does not exist"
+
+#~ msgid "Sign in denied by administrator"
+#~ msgstr "Sign in denied by administrator"
+
+#~ msgid "Sign in %s all ok"
+#~ msgstr "Sign in %s all ok"
+
+#~ msgid "Odhlášení proběhlo uspěšně"
+#~ msgstr "Logout was sucessfull"
+
+#~ msgid " není složka. Jsem v adresáři:"
+#~ msgstr " not an folder. Current directory:"
+
+#~ msgid " není čitelná složka. Jsem v adresáři:"
+#~ msgstr " není čitelná složka. Jsem v adresáři:"
+
+#~ msgid " není zapisovatelná složka. Jsem v adresáři:"
+#~ msgstr " není zapisovatelná složka. Jsem v adresáři:"
+
+#~ msgid "UpdateToMySQL: Chybějící Data"
+#~ msgstr "UpdateToMySQL: Missing Data"
+
+#~ msgid "NENI PODLE CEHO URCIT JEDINECNOST PRODUKTU v shopu "
+#~ msgstr "something goes wrong"
+
+#, fuzzy
+#~ msgid "Tabulka % byla vytvořena"
+#~ msgstr "Table % was created"
+
+#~ msgid "Položku se nepodařilo uložit. Prosím zkuste jinou hodnotu."
+#~ msgstr "Item was not saved. Please try another value"
+
+#~ msgid "Neuloženo"
+#~ msgstr "Not saved"
+
+#~ msgid "potvrzení"
+#~ msgstr "confirmation"
+
+#~ msgid "Opravdu"
+#~ msgstr "Are you sure ?"
+
+#~ msgid "Ano"
+#~ msgstr "Yes"
+
+#~ msgid "Ne"
+#~ msgstr "No"
+
+#~ msgid "chybí login"
+#~ msgstr "missing login"
+
+#~ msgid "chybí heslo"
+#~ msgstr "missing password"
+
+#~ msgid "neplatné heslo"
+#~ msgstr "wrong password"
+
+#~ msgid "uživatel %s neexistuje"
+#~ msgstr "user %s does not exist"
+
+#~ msgid "přihlášení zakázáno administrátorem"
+#~ msgstr "login forbidden by administrator"
+
+#~ msgid "Přihlášení %s proběhlo bez problémů"
+#~ msgstr "login %s was successfull"
+
+#~ msgid "Nejprve se prosím přihlašte"
+#~ msgstr "Please login first"
+
+#~ msgid "Zpráva %s byla odeslána na adresu %s"
+#~ msgstr "Message %s was sent to %s"

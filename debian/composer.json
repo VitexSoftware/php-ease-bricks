@@ -1,0 +1,25 @@
+{
+    "name": "deb/ease-bricks",
+    "description": "Addons for PHP Framework (debianized)",
+    "version": "0.9",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz",
+            "homepage": "http://v.s.cz/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ease\\ui\\": "ui"
+        }
+
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "deb/ease-framework": "*"
+    },
+    "type": "library",
+    "homepage": "http://v.s.cz/ease.php",
+    "license": "GPL-2.0+"
+}
