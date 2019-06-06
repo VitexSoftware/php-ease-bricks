@@ -17,8 +17,31 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "deb/ease-framework": "*"
+        "deb/ease-twbootstrap": "*"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/usr/share/php/Ease",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "/usr/share/php/EaseHtml",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "/usr/share/php/EaseTWB",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "type": "library",
     "homepage": "http://v.s.cz/ease.php",
     "license": "GPL-2.0+"

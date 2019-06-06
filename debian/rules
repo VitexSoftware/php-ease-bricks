@@ -12,5 +12,5 @@ override_dh_auto_test:
 override_dh_install:
 	./debian/apigendoc.sh
 	dh_install
-	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap\/css\/bootstrap-switch.css\');" -i debian/ease-framework-bricks/usr/share/php/EaseBricks/ui/TWBSwitch.php 
-	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap\/js\/bootstrap-switch.js\');"   -i debian/ease-framework-bricks/usr/share/php/EaseBricks/ui/TWBSwitch.php 
+	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap\/css\/bootstrap-switch.css\');" -i debian/php-ease-bricks/usr/share/php/EaseBricks/ui/TWBSwitch.php 
+	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap\/js\/bootstrap-switch.js\');"   -i debian/php-ease-bricks/usr/share/php/EaseBricks/ui/TWBSwitch.php 

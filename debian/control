@@ -7,18 +7,18 @@ Priority: optional
 Homepage: https://github.com/VitexSoftware/Ease-PHP-Bricks
 
 Package: php-ease-bricks
-Depends: ${misc:Depends},ease-framework
+Depends: ${misc:Depends},php-ease-core
 Architecture: all
 Section: web
 Priority: optional
 Description: Simple PHP framework Bricks
  Addon components for EasePHP Framework
 
-Package: php-ease-bricks-doc
-Depends: ${misc:Depends},
-Suggests: www-browser
-Architecture: all
-Section: doc
-Priority: optional
-Description: Ease Framework documentation
- ApiGen html documentation for ease-framework php library
+#Package: php-ease-bricks-doc
+#Depends: ${misc:Depends},
+#Suggests: www-browser
+#Architecture: all
+#Section: doc
+#Priority: optional
+#Description: Ease Framework documentation
+# ApiGen html documentation for ease-framework php library

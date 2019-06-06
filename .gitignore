@@ -19,3 +19,4 @@ composer.lock
 /debian/php-ease-bricks-doc/
 /debian/php-ease-bricks/
 /debian/files
+/debian/debhelper-build-stamp
