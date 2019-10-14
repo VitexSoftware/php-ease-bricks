@@ -173,22 +173,18 @@ Installation
 Composer:
 ---------
 
-    composer require vitexsoftware/ease-bricks
+    composer require vitexsoftware/ease-core-bricks
 
 
 Older versions and its requirements https://packagist.org/packages/vitexsoftware/ease-bricks
 
-
-To get Docker image:
-
-    docker pull vitexsoftware/ease-bricks
 
 For Debian, Ubuntu & friends please use repo:
 
     wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
     aptitude update
-    aptitude install ease-bricks
+    aptitude install php-ease-core-bricks
 
 In this case please add this to your app composer.json:
 
