@@ -1,22 +1,22 @@
-php-ease-core-bricks (0.9.3) UNRELEASED; urgency=medium
+php-ease-bricks (0.9.3) UNRELEASED; urgency=medium
 
   * repackage
 
  -- Vítězslav Dvořák <info@vitexsoftware.cz>  Mon, 14 Oct 2019 12:16:37 +0200
 
-php-ease-core-bricks (0.9) UNRELEASED; urgency=medium
+php-ease-bricks (0.9) UNRELEASED; urgency=medium
 
   * Selectized
 
  -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Thu, 23 May 2019 23:24:56 +0200
 
-php-ease-core-bricks (0.7) UNRELEASED; urgency=medium
+php-ease-bricks (0.7) UNRELEASED; urgency=medium
 
   * Rename package in debian for Composer 2.0
 
  -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Tue, 12 Mar 2019 16:45:03 +0100
 
-php-ease-core-bricks (0.5) experimenta; urgency=low
+php-ease-bricks (0.5) experimenta; urgency=low
 
   * Browsing History added
   * Release v0.5
