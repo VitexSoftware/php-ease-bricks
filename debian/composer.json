@@ -13,7 +13,6 @@
         "psr-4": {
             "Ease\\ui\\": "ui"
         }
-
     },
     "minimum-stability": "dev",
     "require": {
@@ -30,13 +29,6 @@
         {
             "type": "path",
             "url": "/usr/share/php/EaseHtml",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "/usr/share/php/EaseTWB",
             "options": {
                 "symlink": true
             }

@@ -7,7 +7,7 @@ Priority: optional
 Homepage: https://github.com/VitexSoftware/php-ease-bricks
 
 Package: php-ease-bricks
-Depends: ${misc:Depends},php-ease-core,php-ease-twbootstrap
+Depends: ${misc:Depends},php-ease-html
 Architecture: all
 Section: web
 Priority: optional
