@@ -11,6 +11,4 @@
 ./src/Ease/ui/SemaforLight.php
 ./src/Ease/ui/SignInForm.php
 ./src/Ease/ui/StickyNote.php
-./src/Ease/ui/TWBSwitch.php
-./src/Ease/ui/TWBTreeView.php
 ./debian/composer.json

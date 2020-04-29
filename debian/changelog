@@ -1,12 +1,12 @@
-php-ease-bricks (0.9.4) UNRELEASED; urgency=medium
+php-ease-bricks (0.9.5) UNRELEASED; urgency=medium
 
   [ Vítězslav Dvořák ]
   * repackage for buster
 
   [ CyberVitexus ]
-  * 
+  * Package Fixes
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 05 Mar 2020 01:28:03 +0100
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Wed, 29 Apr 2020 14:13:48 +0200
 
 php-ease-bricks (0.9) UNRELEASED; urgency=medium
 
