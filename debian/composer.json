@@ -16,22 +16,16 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "deb/ease-twbootstrap": "*"
+        "deb/ease-html": "*"
     },
     "repositories": [
         {
             "type": "path",
-            "url": "/usr/share/php/Ease",
-            "options": {
-                "symlink": true
-            }
+            "url": "/usr/share/php/EaseCore"
         },
         {
             "type": "path",
-            "url": "/usr/share/php/EaseHtml",
-            "options": {
-                "symlink": true
-            }
+            "url": "/usr/share/php/EaseHtml"
         }
     ],
     "type": "library",

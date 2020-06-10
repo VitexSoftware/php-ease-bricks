@@ -22,7 +22,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "vitexsoftware/ease-twbootstrap": "*"
+        "vitexsoftware/ease-bootstrap": "*"
     },
     "require-dev": {
         "apigen/apigen": "^4.",

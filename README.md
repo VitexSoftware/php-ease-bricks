@@ -194,7 +194,7 @@ In this case please add this to your app composer.json:
     "repositories": [
         {
             "type": "path",
-            "url": "/usr/share/php/Ease",
+            "url": "/usr/share/php/EaseCore",
             "options": {
                 "symlink": true
             }
