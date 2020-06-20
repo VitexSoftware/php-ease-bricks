@@ -8,8 +8,9 @@ php-ease-bricks (0.9.7) UNRELEASED; urgency=medium
   * twbootstrap renamed to bootstrap
   * Release v0.9.6
   * Release v0.9.6
+  * Release v0.9.7
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:20:16 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:39:36 +0200
 
 php-ease-bricks (0.9) UNRELEASED; urgency=medium
 
