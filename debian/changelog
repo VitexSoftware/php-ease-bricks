@@ -1,4 +1,4 @@
-php-ease-bricks (0.9.6) UNRELEASED; urgency=medium
+php-ease-bricks (0.9.7) UNRELEASED; urgency=medium
 
   [ Vítězslav Dvořák ]
   * repackage for buster
@@ -7,8 +7,9 @@ php-ease-bricks (0.9.6) UNRELEASED; urgency=medium
   * Package Fixes
   * twbootstrap renamed to bootstrap
   * Release v0.9.6
+  * Release v0.9.6
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 13:21:44 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:20:16 +0200
 
 php-ease-bricks (0.9) UNRELEASED; urgency=medium
 
