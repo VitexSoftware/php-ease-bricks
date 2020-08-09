@@ -1,24 +1,31 @@
 <?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+
+/**
+ * EasePHP Bricks - SignIn form.
+ *
+ * @author     Vítězslav Dvořák <vitex@arachne.cz>
+ * @copyright  2016-2020 Vitex Software
  */
 
 namespace Ease\ui;
+
+use Ease\Html\Form;
+use Ease\Html\InputTextTag;
+use Ease\Html\SubmitButton;
 
 /**
  * Description of SignInForm
  *
  * @author vitex
  */
-class SignInForm extends \Ease\TWB\Form
-{
+class SignInForm extends Form {
+
     /**
      *
      * @var string
      */
     public $userNameField = 'username';
+
     /**
      *
      * @var string 
@@ -26,24 +33,22 @@ class SignInForm extends \Ease\TWB\Form
     public $passwordField = 'password';
 
     public function __construct($formAction = null, $formMethod = 'post',
-                                $tagProperties = null)
-    {
+            $tagProperties = null) {
         parent::__construct('SignIn', $formAction, $formMethod, null,
-            $tagProperties);
-        $this->addInput(new \Ease\Html\InputTextTag($this->userNameField),
-            _('Username'), _('Login'));
+                $tagProperties);
+        $this->addInput(new InputTextTag($this->userNameField),
+                _('Username'), _('Login'));
         $this->addInput(new PasswordInput($this->passwordField),
-            _('Password'), '');
+                _('Password'), '');
     }
 
-/**
- * Finally add subnut button
- */    
-    public function finalize()
-    {
-        $this->addItem(new \Ease\TWB\SubmitButton(_('Sign In'), 'success',
-            ['width' => '100%']));
+    /**
+     * Finally add subnut button
+     */
+    public function finalize() {
+        $this->addItem(new SubmitButton(_('Sign In'), 'success',
+                        ['width' => '100%']));
         parent::finalize();
     }
-    
+
 }

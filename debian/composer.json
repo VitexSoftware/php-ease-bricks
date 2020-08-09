@@ -1,34 +1,35 @@
 {
-    "name": "deb/ease-bricks",
-    "description": "Addons for PHP Framework (debianized)",
-    "version": "0.9",
-    "authors": [
-        {
-            "name": "Vítězslav Dvořák",
-            "email": "info@vitexsoftware.cz",
-            "homepage": "http://v.s.cz/"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Ease\\ui\\": "ui"
-        }
+  "name": "deb/ease-bricks",
+  "description": "Addons for PHP Framework (debianized)",
+  "version": "0.9",
+  "authors": [
+    {
+      "name": "Vítězslav Dvořák",
+      "email": "info@vitexsoftware.cz",
+      "homepage": "http://v.s.cz/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ease\\ui\\": "ui"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "deb/ease-html": "*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/usr/share/php/EaseCore"
     },
-    "minimum-stability": "dev",
-    "require": {
-        "deb/ease-html": "*"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "/usr/share/php/EaseCore"
-        },
-        {
-            "type": "path",
-            "url": "/usr/share/php/EaseHtml"
-        }
-    ],
-    "type": "library",
-    "homepage": "http://v.s.cz/ease.php",
-    "license": "GPL-2.0+"
+    {
+      "type": "path",
+      "url": "/usr/share/php/EaseHtml"
+    }
+  ],
+  "type": "library",
+  "homepage": "http://v.s.cz/ease.php",
+  "license": "GPL-2.0+",
+  "address": "0.9.8"
 }
