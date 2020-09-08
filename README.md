@@ -181,13 +181,17 @@ Older versions and its requirements https://packagist.org/packages/vitexsoftware
 
 For Debian, Ubuntu & friends please use repo:
 
-    wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
-    echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
-    aptitude update
-    aptitude install php-ease-core-bricks
+```shell
+sudo apt install lsb-release wget
+echo "deb http://repo.vitexsoftware.cz $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
+sudo wget -O /etc/apt/trusted.gpg.d/vitexsoftware.gpg http://repo.vitexsoftware.cz/keyring.gpg
+sudo apt update
+sudo apt install php-vitexsoftware-ease-bricks	    
+```
 
 In this case please add this to your app composer.json:
 
+```json
     "require": {
         "ease-bricks": "*"
     },
@@ -200,12 +204,14 @@ In this case please add this to your app composer.json:
             }
         }
     ]
+```
 
-Links
-=====
+Note 
+----
 
-Homepage: https://www.vitexsoftware.cz/ease.php
+All classes extendig booststrap classed was moved to separate libraries
 
-GitHub: https://github.com/VitexSoftware/Ease-PHP-Bricks
+* [ease-twbootstrap-widgets](https://github.com/VitexSoftware/php-ease-twbootstrap-widgets)
+* [ease-twbootstrap4-widgets](https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets)
 
-Apigen Docs: https://www.vitexsoftware.cz/ease-php-bricks/
+
