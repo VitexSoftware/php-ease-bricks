@@ -1,20 +1,21 @@
-Source: php-ease-bricks
+Source: php-vitexsoftware-ease-bricks
 Build-Depends: debhelper (>= 7.0.50~)
-Standards-Version: 3.8.4
+Standards-Version: 4.3.0
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
 Priority: optional
 Homepage: https://github.com/VitexSoftware/php-ease-bricks
 
-Package: php-ease-bricks
+Package: php-vitexsoftware-ease-bricks
 Depends: ${misc:Depends},php-ease-html
+Replaces: php-ease-bricks
 Architecture: all
 Section: web
 Priority: optional
 Description: Simple PHP framework Bricks
  Addon components for EasePHP Framework
 
-#Package: php-ease-bricks-doc
+#Package: php-vitexsoftware-ease-bricks-doc
 #Depends: ${misc:Depends},
 #Suggests: www-browser
 #Architecture: all

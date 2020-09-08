@@ -1,6 +1,5 @@
 #!/usr/bin/make -f
 
-PKG_PATH:=/usr/share/php/Ease
 BUILD_DIR:=build
 
 %:

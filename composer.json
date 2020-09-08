@@ -22,9 +22,11 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "vitexsoftware/ease-html": "^1.23"
+        "vitexsoftware/ease-bootstrap": "*"
     },
     "require-dev": {
+        "apigen/apigen": "^4.",
+        "phpunit/phpunit": "^8"
     },
     "type": "library",
     "homepage": "http://v.s.cz/ease.php",
