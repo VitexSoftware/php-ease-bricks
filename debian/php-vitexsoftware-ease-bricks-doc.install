@@ -1,2 +1,14 @@
-docs/*	usr/share/doc/ease-framework-bricks/html
-docs/resources/*	usr/share/doc/ease-framework/html/resources
+docs/classes/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/classes
+docs/css/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/css
+docs/files/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/files
+docs/graphs/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/graphs
+docs/index.html		usr/share/doc/php-vitexsoftware-ease-bricks/html/
+docs/indices/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/indices
+docs/js/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/js
+docs/namespaces/*	usr/share/doc/php-vitexsoftware-ease-bricks/html/namespaces
+docs/packages/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/packages
+docs/reports/*		usr/share/doc/php-vitexsoftware-ease-bricks/html/reports
+
+debian/php-vitexsoftware-ease-bricks-doc.conf	usr/share/doc/php-vitexsoftware-ease-bricks-doc/apache
+README.md			usr/share/doc/php-vitexsoftware-ease-bricks
+

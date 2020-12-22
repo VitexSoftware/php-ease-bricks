@@ -24,3 +24,7 @@ composer.lock
 /debian/php-vitexsoftware-ease-bricks.substvars
 /debian/php-vitexsoftware-ease-bricks/
 /debian/.debhelper/
+/debian/php-vitexsoftware-ease-bricks-doc.substvars
+/debian/php-vitexsoftware-ease-bricks-doc.debhelper.log
+/.phpdoc/
+/debian/php-vitexsoftware-ease-bricks-doc/
