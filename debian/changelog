@@ -1,4 +1,4 @@
-php-vitexsoftware-ease-bricks (0.9.8) UNRELEASED; urgency=medium
+php-vitexsoftware-ease-bricks (0.9.9) UNRELEASED; urgency=medium
 
   [ Vítězslav Dvořák ]
   * repackage for buster
@@ -10,8 +10,9 @@ php-vitexsoftware-ease-bricks (0.9.8) UNRELEASED; urgency=medium
   * Release v0.9.6
   * Release v0.9.7
   * Release v0.9.7
+  * Dependency fix
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sun, 09 Aug 2020 13:40:14 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sun, 24 Jan 2021 02:34:41 +0100
 
 php-ease-bricks (0.9) UNRELEASED; urgency=medium
 

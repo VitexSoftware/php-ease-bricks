@@ -1,7 +1,7 @@
 {
   "name": "deb/ease-bricks",
   "description": "Addons for PHP Framework (debianized)",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "authors": [
     {
       "name": "Vítězslav Dvořák",
