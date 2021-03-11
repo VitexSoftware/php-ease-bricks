@@ -16,17 +16,16 @@
     "autoload-dev": {
         "psr-4": {
             "Test\\Ease\\ui\\": "tests/src/Ease/ui",
-            "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
-            "Test\\Ease\\TWB\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB"
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-core/tests/src/Ease",
+            "Test\\Ease\\TWB\\": "vendor/vitexsoftware/ease-core/tests/src/Ease/TWB"
         }
     },
     "minimum-stability": "stable",
     "require": {
-        "vitexsoftware/ease-bootstrap": "*"
+        "vitexsoftware/ease-twbootstrap": "*"
     },
     "require-dev": {
-        "apigen/apigen": "^4.",
-        "phpunit/phpunit": "^8"
+        "phpunit/phpunit": "^9"
     },
     "type": "library",
     "homepage": "http://v.s.cz/ease.php",
