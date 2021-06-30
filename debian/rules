@@ -6,6 +6,7 @@ BUILD_DIR:=build
 	dh $@
 
 override_dh_prep:
+	mkdir -p docs
 	phpdoc -d src
 	mv .phpdoc/build/* docs
 	dh_prep
@@ -14,6 +15,6 @@ override_dh_auto_test:
 	echo tests temporarly skipped for now in rules file
 
 override_dh_install:
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'`'"' debian/composer.json |sponge debian/composer.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/composer.json |sponge debian/composer.json
 	dh_install
 
