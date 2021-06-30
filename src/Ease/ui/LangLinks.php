@@ -13,7 +13,7 @@ namespace Ease\ui;
  *
  * @author vitex
  */
-class LangSelect extends \Ease\Html\SelectTag {
+class LangLinks extends \Ease\Html\UlTag {
 
     public function __construct($properties = []) {
         parent::__construct(null, $properties);

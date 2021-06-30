@@ -22,7 +22,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "vitexsoftware/ease-twbootstrap": "*"
+        "vitexsoftware/ease-twbootstrap": ">=0.9"
     },
     "require-dev": {
         "phpunit/phpunit": "^9"
