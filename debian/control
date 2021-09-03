@@ -4,7 +4,7 @@ Standards-Version: 4.3.0
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
 Priority: optional
-Homepage: https://github.com/VitexSoftware/php-ease-bricks
+Homepage: https://github.com/VitexSoftware/php-vitexsoftware-ease-bricks
 
 Package: php-vitexsoftware-ease-bricks
 Depends: ${misc:Depends},php-vitexsoftware-ease-html

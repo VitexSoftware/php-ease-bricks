@@ -173,8 +173,9 @@ Installation
 Composer:
 ---------
 
-    composer require vitexsoftware/ease-core-bricks
-
+```shell
+composer require vitexsoftware/ease-core-bricks
+```
 
 Older versions and its requirements https://packagist.org/packages/vitexsoftware/ease-bricks
 
