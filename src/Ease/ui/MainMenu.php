@@ -114,7 +114,7 @@ class MainMenu extends \Ease\Html\NavTag
                 padding-bottom: 40px;
             }');
 
-        \Ease\JQuery\Part::jQueryze($this);
+        \Ease\Part::jQueryze($this);
         \Ease\Shared::webPage()->addCss('.dropdown-menu { overflow-y: auto } ');
         \Ease\Shared::webPage()->addJavaScript("$('.dropdown-menu').css('max-height',$(window).height()-100);",
             null, true);
