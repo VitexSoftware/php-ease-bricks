@@ -19,6 +19,7 @@ composer.lock
 /debian/php-ease-bricks-doc/
 /debian/php-ease-bricks/
 /debian/files
+/debian/.debhelper
 /debian/debhelper-build-stamp
 /debian/php-vitexsoftware-ease-bricks.debhelper.log
 /debian/php-vitexsoftware-ease-bricks.substvars

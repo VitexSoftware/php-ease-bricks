@@ -35,19 +35,6 @@ $mpmenu = new \Ease\ui\MainPageMenu();
 $mpmenu->addMenuItem('logo.png', 'Caption', 'https://url/');
 ```
 
-TwitterBootstrap Switch
------------------------
-
-Ease support for http://bootstrapswitch.com/ 
-
-![TWBSwitch](https://raw.githubusercontent.com/VitexSoftware/Ease-PHP-Bricks/master/TWBSwitch.png "Main Page Menu screenshot")
-
-```php
-new Ease\ui\TWBSwitch('swname', true, 1,['onText' => 'YES', 'offText' => 'NO']);
-```
-
-The **libjs-bootstrap-switch** package with requied js/css assets is already present in our repository https://www.vitexsoftware.cz/repo.php
-
 Boolean LED
 -----------
 
@@ -180,18 +167,20 @@ Older versions and its requirements https://packagist.org/packages/vitexsoftware
 For Debian, Ubuntu & friends please use repo:
 
 ```shell
-sudo apt install lsb-release wget
-echo "deb http://repo.vitexsoftware.cz $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
-sudo wget -O /etc/apt/trusted.gpg.d/vitexsoftware.gpg http://repo.vitexsoftware.cz/keyring.gpg
+sudo apt install lsb-release wget apt-transport-https bzip2
+
+
+wget -qO- https://repo.vitexsoftware.com/keyring.gpg | sudo tee /etc/apt/trusted.gpg.d/vitexsoftware.gpg
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/vitexsoftware.gpg]  https://repo.vitexsoftware.com  $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
 sudo apt update
-sudo apt install php-vitexsoftware-ease-bricks	    
+sudo apt install php-vitexsoftware-ease-bricks
 ```
 
 In this case please add this to your app composer.json:
 
 ```json
     "require": {
-        "ease-bricks": "*"
+        "deb/ease-bricks": "*"
     },
     "repositories": [
         {
