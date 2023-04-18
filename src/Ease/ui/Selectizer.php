@@ -37,9 +37,8 @@ $('#" . $this->getTagID() . "').selectize({
 });
 ");
 
-        $this->includeJavaScript('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.js');
-        $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css');
-        $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css');
+        $this->includeJavaScript('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/standalone/selectize.js');
+        $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.min.css');
     }
 
 }
