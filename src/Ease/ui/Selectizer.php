@@ -4,7 +4,7 @@
  * Common selectize.js based input
  *
  * @author Vítězslav Dvořák <info@vitexsoftware.cz>
- * @copyright (c) 2019, Vitex Software
+ * @copyright (c) 2019,2023 Vitex Software
  */
 
 namespace Ease\ui;
@@ -37,8 +37,8 @@ $('#" . $this->getTagID() . "').selectize({
 });
 ");
 
-        $this->includeJavaScript('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/standalone/selectize.js');
-        $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.min.css');
+        $this->includeJavaScript('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js');
+        $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css');
     }
 
 }
