@@ -15,10 +15,10 @@ class SemaforLight extends \Ease\Html\SvgTag
 
     public function __construct($color = 'white', $properties = [])
     {
-        if($color === false){
+        if ($color === false) {
             $color = 'danger';
         }
-        if($color === true) {
+        if ($color === true) {
             $color = 'success';
         }
         $properties = array_merge($this->properties, $properties);
@@ -29,8 +29,8 @@ class SemaforLight extends \Ease\Html\SvgTag
        rx="8"
        cy="9"
        cx="9"
-       stroke="'.self::adjustBrightness(self::colorNameToHex($color), 200).'" 
-       style="fill:'.self::colorNameToHex($color).';fill-opacity:1;stroke-width:1" />
+       stroke="' . self::adjustBrightness(self::colorNameToHex($color), 200) . '" 
+       style="fill:' . self::colorNameToHex($color) . ';fill-opacity:1;stroke-width:1" />
   </g>
 ', $properties);
     }
@@ -38,9 +38,9 @@ class SemaforLight extends \Ease\Html\SvgTag
     /**
      * converts an html color name to a hex color value
      * if the input is not a color name, the original value is returned
-     * 
+     *
      * @param string $color_name
-     * 
+     *
      * @return string rgb code
      */
     public static function colorNameToHex($color_name)
@@ -203,7 +203,7 @@ class SemaforLight extends \Ease\Html\SvgTag
 
         $color_name = strtolower($color_name);
         if (isset($colors[$color_name])) {
-            return '#'.$colors[$color_name];
+            return '#' . $colors[$color_name];
         } else {
             return ($color_name);
         }
@@ -211,10 +211,10 @@ class SemaforLight extends \Ease\Html\SvgTag
 
     /**
      * Obtain lighter or darker color code
-     * 
+     *
      * @param string $color name e.g. blue
      * @param boolean $state
-     * 
+     *
      * @return type
      */
     public function getColorCode($color)
@@ -224,10 +224,10 @@ class SemaforLight extends \Ease\Html\SvgTag
 
     /**
      * Change color hue
-     * 
+     *
      * @param string $hex initial color
      * @param int $steps
-     * 
+     *
      * @return string changed color
      */
     public static function adjustBrightness($hex, $steps)
@@ -238,8 +238,11 @@ class SemaforLight extends \Ease\Html\SvgTag
         // Normalize into a six character long hex string
         $hex = str_replace('#', '', $hex);
         if (strlen($hex) == 3) {
-            $hex = str_repeat(substr($hex, 0, 1), 2).str_repeat(substr($hex, 1,
-                        1), 2).str_repeat(substr($hex, 2, 1), 2);
+            $hex = str_repeat(substr($hex, 0, 1), 2) . str_repeat(substr(
+                $hex,
+                1,
+                1
+            ), 2) . str_repeat(substr($hex, 2, 1), 2);
         }
 
         // Split into three parts: R, G and B

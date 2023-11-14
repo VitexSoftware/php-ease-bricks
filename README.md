@@ -1,4 +1,4 @@
-![EasePHP Framework Logo](https://raw.githubusercontent.com/VitexSoftware/Ease-PHP-Bricks/master/project-logo.png "Project Logo")
+![EasePHP Framework Logo](project-logo.png?raw=true "Project Logo")
 
 EasePHP Bricks
 =================
@@ -17,6 +17,10 @@ Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 
 Bricks Included
 ===============
+
+OldTerminal
+
+![Old Terminal](oldterminal.png?raw=true)
 
 GDPR Logger
 -----------

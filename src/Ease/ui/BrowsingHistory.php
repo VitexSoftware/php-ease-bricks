@@ -11,19 +11,20 @@ namespace Ease\ui;
 
 /**
  * Show history of visited pages in app
- * 
+ *
  * @param mixed $content
  * @param array $properties
  */
-class BrowsingHistory extends \Ease\Html\DivTag {
-
+class BrowsingHistory extends \Ease\Html\DivTag
+{
     /**
      * Show history of visited pages in app
-     * 
+     *
      * @param mixed $content
      * @param array $properties
      */
-    public function __construct($content = null, $properties = null) {
+    public function __construct($content = null, $properties = null)
+    {
         $webPage = \Ease\Shared::webPage();
         if (is_null($properties)) {
             $properties = [];
@@ -45,20 +46,27 @@ class BrowsingHistory extends \Ease\Html\DivTag {
                 unset($_SESSION['history'][$hid]);
             }
         }
-        array_unshift($_SESSION['history'],
-                ['url' => $currentUrl, 'title' => $currentTitle]);
+        array_unshift(
+            $_SESSION['history'],
+            ['url' => $currentUrl, 'title' => $currentTitle]
+        );
         foreach ($_SESSION['history'] as $bookmark) {
-            $this->addItem(new \Ease\Html\SpanTag(new \Ease\Html\ATag($bookmark['url'],
-                                    [self::bookmarkIcon(), ' ' . $bookmark['title']]),
-                            ['class' => 'hitem']));
+            $this->addItem(new \Ease\Html\SpanTag(
+                new \Ease\Html\ATag(
+                    $bookmark['url'],
+                    [self::bookmarkIcon(), ' ' . $bookmark['title']]
+                ),
+                ['class' => 'hitem']
+            ));
         }
     }
 
     /**
-     * 
+     *
      * @return string
      */
-    public static function bookmarkIcon() {
+    public static function bookmarkIcon()
+    {
         return '&#128278;';
     }
 
@@ -66,12 +74,12 @@ class BrowsingHistory extends \Ease\Html\DivTag {
     /**
      * Add Css
      */
-    function finalize() {
+    function finalize()
+    {
         $this->addCss('
             .hitem { background-color: #B5FFC4; margin: 5px; border-radius: 15px 50px 30px 5px; padding-left: 3px; padding-right: 10px; }
             #history { margin: 5px; }
             ');
         parent::finalize();
     }
-
 }

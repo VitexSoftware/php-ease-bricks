@@ -13,20 +13,22 @@ namespace Ease\ui;
  *
  * @author vitex
  */
-class LangSelect extends \Ease\Html\SelectTag {
-
-    public function __construct($properties = []) {
+class LangSelect extends \Ease\Html\SelectTag
+{
+    public function __construct($properties = [])
+    {
         parent::__construct(null, $properties);
         $locale = \Ease\Locale::singleton();
         foreach ($locale->availble() as $code => $name) {
             $name = substr($name, 0, strpos($name, ' ('));
             if (\Ease\Locale::$localeUsed == $code) {
-                $this->addItemSmart(new \Ease\Html\StrongTag(new \Ease\Html\ATag('?locale=' . $code,
-                                        $name)));
+                $this->addItemSmart(new \Ease\Html\StrongTag(new \Ease\Html\ATag(
+                    '?locale=' . $code,
+                    $name
+                )));
             } else {
                 $this->addItemSmart(new \Ease\Html\ATag('?locale=' . $code, $name));
             }
         }
     }
-
 }

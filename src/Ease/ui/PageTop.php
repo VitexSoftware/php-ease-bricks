@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EaseBricks - Top Of the page.
  *
@@ -7,6 +8,7 @@
  */
 
 namespace Ease\ui;
+
 /**
  * Page TOP.
  */

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EaseBricks - Main menu.
  *
@@ -10,7 +11,6 @@ namespace Ease\ui;
 
 class MainMenu extends \Ease\Html\NavTag
 {
-
     /**
      * Vytvoří hlavní menu.
      */
@@ -31,42 +31,51 @@ class MainMenu extends \Ease\Html\NavTag
         switch (get_class($user)) {
             case 'SpojeNet\System\User': //Admin
                 $nav->addMenuItem(new NavBarSearchBox('search', 'search.php'));
-                $nav->addDropDownMenu('<img width=30 src=images/gear.svg> '._('Scripts'),
+                $nav->addDropDownMenu(
+                    '<img width=30 src=images/gear.svg> ' . _('Scripts'),
                     [
-                        'invoicematch.php' => \Ease\TWB\Part::GlyphIcon('piggy-bank').' '._('Invoice matching (Take so long)'),
-//                'invoice2flexibee.php' => \Ease\TWB\Part::GlyphIcon('plus') . '&nbsp;' . _('Faktury do Flexibee'),
-//                'address2flexibee.php' => \Ease\TWB\Part::GlyphIcon('plus') . '&nbsp;' . _('Adresář do Flexibee'),
+                        'invoicematch.php' => \Ease\TWB\Part::GlyphIcon('piggy-bank') . ' ' . _('Invoice matching (Take so long)'),
+                    //                'invoice2flexibee.php' => \Ease\TWB\Part::GlyphIcon('plus') . '&nbsp;' . _('Faktury do Flexibee'),
+                    //                'address2flexibee.php' => \Ease\TWB\Part::GlyphIcon('plus') . '&nbsp;' . _('Adresář do Flexibee'),
                     ]
                 );
-                $nav->addDropDownMenu('<img width=30 src=images/contract_150.png> '._('Oders'),
+                $nav->addDropDownMenu(
+                    '<img width=30 src=images/contract_150.png> ' . _('Oders'),
                     array_merge([
-                    'contracttodo.php' => new \Ease\Html\ImgTag('images/copying.svg',
-                        'TODO', ['height' => '20px']).'&nbsp; '._('Orders TODO'),
-//                    'zavazky.php' => \Ease\TWB\Part::GlyphIcon('transfer').' '._('Měsíční závazky'),
-//                    'pohledavky.php' => \Ease\TWB\Part::GlyphIcon('transfer').' '._('Měsíční pohledávky'),
-//                    'contract-reset.php' => \Ease\TWB\Part::GlyphIcon('repeat').' '._('Reset autogenerace'),
-//                    'contract.php' => \Ease\TWB\Part::GlyphIcon('plus').' '._('Nová smlouva'),
-//                    'contracts.php' => \Ease\TWB\Part::GlyphIcon('list').'&nbsp;'._('Přehled smluv'),
-//                    'rspcntrcts.php' => \Ease\TWB\Part::GlyphIcon('user').'&nbsp;'._('Respondenti'),
+                    'contracttodo.php' => new \Ease\Html\ImgTag(
+                        'images/copying.svg',
+                        'TODO',
+                        ['height' => '20px']
+                    ) . '&nbsp; ' . _('Orders TODO'),
+                    //                    'zavazky.php' => \Ease\TWB\Part::GlyphIcon('transfer').' '._('Měsíční závazky'),
+                    //                    'pohledavky.php' => \Ease\TWB\Part::GlyphIcon('transfer').' '._('Měsíční pohledávky'),
+                    //                    'contract-reset.php' => \Ease\TWB\Part::GlyphIcon('repeat').' '._('Reset autogenerace'),
+                    //                    'contract.php' => \Ease\TWB\Part::GlyphIcon('plus').' '._('Nová smlouva'),
+                    //                    'contracts.php' => \Ease\TWB\Part::GlyphIcon('list').'&nbsp;'._('Přehled smluv'),
+                    //                    'rspcntrcts.php' => \Ease\TWB\Part::GlyphIcon('user').'&nbsp;'._('Respondenti'),
                     ])
                 );
-                $nav->addDropDownMenu('<img width=30 src=images/order.svg> '._('Proposal'),
+                $nav->addDropDownMenu(
+                    '<img width=30 src=images/order.svg> ' . _('Proposal'),
                     [
-                        'adminpricelist.php' => \Ease\TWB\Part::GlyphIcon('th-list').' '._('Pricelist'),
+                        'adminpricelist.php' => \Ease\TWB\Part::GlyphIcon('th-list') . ' ' . _('Pricelist'),
                     ]
                 );
 
-                $nav->addDropDownMenu('<img width=30 src=images/users_150.png> '._('Users'),
+                $nav->addDropDownMenu(
+                    '<img width=30 src=images/users_150.png> ' . _('Users'),
                     array_merge([
-                    'createaccount.php' => \Ease\TWB\Part::GlyphIcon('plus').' '._('New user'),
-                    'users.php' => \Ease\TWB\Part::GlyphIcon('list').'&nbsp;'._('User overview'),
+                    'createaccount.php' => \Ease\TWB\Part::GlyphIcon('plus') . ' ' . _('New user'),
+                    'users.php' => \Ease\TWB\Part::GlyphIcon('list') . '&nbsp;' . _('User overview'),
                     '' => '',
                         ], $this->getMenuList(\Ease\Shared::user(), 'user'))
                 );
                 break;
             case 'SpojeNet\System\Customer': //Customer
-                $nav->addMenuItem(new \Ease\Html\ATag('pricelist.php',
-                        '<img width=30 src=images/cennik.png> '._('Pricelist')));
+                $nav->addMenuItem(new \Ease\Html\ATag(
+                    'pricelist.php',
+                    '<img width=30 src=images/cennik.png> ' . _('Pricelist')
+                ));
 
                 $subregId = $user->adresar->getExternalID('subreg');
                 $ipexId   = $user->adresar->getExternalID('ipex');
@@ -75,26 +84,31 @@ class MainMenu extends \Ease\Html\NavTag
                 if ($subregId || $ipexId) {
                     $productsMenuItems = [];
                     if ($ipexId) {
-                        $productsMenuItems['voip.php'] = \Ease\TWB\Part::GlyphIcon('th-list').' '._('VoIP');
+                        $productsMenuItems['voip.php'] = \Ease\TWB\Part::GlyphIcon('th-list') . ' ' . _('VoIP');
                     }
                     if ($subregId) {
-                        $productsMenuItems['dns.php'] = \Ease\TWB\Part::GlyphIcon('th-list').' '._('Domains');
+                        $productsMenuItems['dns.php'] = \Ease\TWB\Part::GlyphIcon('th-list') . ' ' . _('Domains');
                     }
-                    $nav->addDropDownMenu('<img width=30 src=images/products.svg> '._('Products'),
-                        $productsMenuItems);
+                    $nav->addDropDownMenu(
+                        '<img width=30 src=images/products.svg> ' . _('Products'),
+                        $productsMenuItems
+                    );
                 }
 
                 if ($lmsId) {
-                    $statsMenuItems['isp.php'] = \Ease\TWB\Part::GlyphIcon('th-list').' '._('Traffic');
-                    $nav->addDropDownMenu('<img width=30 src=images/stats.svg> '._('Stats'),
-                        $statsMenuItems);
+                    $statsMenuItems['isp.php'] = \Ease\TWB\Part::GlyphIcon('th-list') . ' ' . _('Traffic');
+                    $nav->addDropDownMenu(
+                        '<img width=30 src=images/stats.svg> ' . _('Stats'),
+                        $statsMenuItems
+                    );
                 }
 
-                $nav->addDropDownMenu('<img width=30 src=images/order.svg> '._('Orders'),
+                $nav->addDropDownMenu(
+                    '<img width=30 src=images/order.svg> ' . _('Orders'),
                     [
-                        'orderform.php' => \Ease\TWB\Part::GlyphIcon('plus').' '._('New order'),
-//                    'pricelist.php' => \Ease\TWB\Part::GlyphIcon('th-list').' '._('Pricelist'),
-                        'myorders.php' => \Ease\TWB\Part::GlyphIcon('list').'&nbsp;'._('My orders')]
+                        'orderform.php' => \Ease\TWB\Part::GlyphIcon('plus') . ' ' . _('New order'),
+                    //                    'pricelist.php' => \Ease\TWB\Part::GlyphIcon('th-list').' '._('Pricelist'),
+                        'myorders.php' => \Ease\TWB\Part::GlyphIcon('list') . '&nbsp;' . _('My orders')]
                 );
 
                 break;
@@ -116,8 +130,11 @@ class MainMenu extends \Ease\Html\NavTag
 
         \Ease\Part::jQueryze($this);
         \Ease\Shared::webPage()->addCss('.dropdown-menu { overflow-y: auto } ');
-        \Ease\Shared::webPage()->addJavaScript("$('.dropdown-menu').css('max-height',$(window).height()-100);",
-            null, true);
+        \Ease\Shared::webPage()->addJavaScript(
+            "$('.dropdown-menu').css('max-height',$(window).height()-100);",
+            null,
+            true
+        );
         $this->includeJavaScript('js/slideupmessages.js');
     }
 }

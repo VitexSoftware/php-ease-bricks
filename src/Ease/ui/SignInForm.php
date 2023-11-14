@@ -18,8 +18,8 @@ use Ease\Html\SubmitButton;
  *
  * @author vitex
  */
-class SignInForm extends Form {
-
+class SignInForm extends Form
+{
     /**
      *
      * @var string
@@ -28,27 +28,44 @@ class SignInForm extends Form {
 
     /**
      *
-     * @var string 
+     * @var string
      */
     public $passwordField = 'password';
 
-    public function __construct($formAction = null, $formMethod = 'post',
-            $tagProperties = null) {
-        parent::__construct('SignIn', $formAction, $formMethod, null,
-                $tagProperties);
-        $this->addInput(new InputTextTag($this->userNameField),
-                _('Username'), _('Login'));
-        $this->addInput(new PasswordInput($this->passwordField),
-                _('Password'), '');
+    public function __construct(
+        $formAction = null,
+        $formMethod = 'post',
+        $tagProperties = null
+    ) {
+        parent::__construct(
+            'SignIn',
+            $formAction,
+            $formMethod,
+            null,
+            $tagProperties
+        );
+        $this->addInput(
+            new InputTextTag($this->userNameField),
+            _('Username'),
+            _('Login')
+        );
+        $this->addInput(
+            new PasswordInput($this->passwordField),
+            _('Password'),
+            ''
+        );
     }
 
     /**
      * Finally add subnut button
      */
-    public function finalize() {
-        $this->addItem(new SubmitButton(_('Sign In'), 'success',
-                        ['width' => '100%']));
+    public function finalize()
+    {
+        $this->addItem(new SubmitButton(
+            _('Sign In'),
+            'success',
+            ['width' => '100%']
+        ));
         parent::finalize();
     }
-
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EasePHP Bricks - Sticky note.
  *
@@ -7,6 +8,7 @@
  */
 
 namespace Ease\ui;
+
 /**
  * Description of StickyNote
  *
@@ -14,7 +16,6 @@ namespace Ease\ui;
  */
 class StickyNote extends \Ease\Html\DivTag
 {
-
     public function finalize()
     {
         $this->addCSS('
