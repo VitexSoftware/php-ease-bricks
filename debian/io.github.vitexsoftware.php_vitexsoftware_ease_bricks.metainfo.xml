@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.vitexsoftware.php_vitexsoftware_ease_bricks</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>php-vitexsoftware-ease-bricks</name>
+  <summary>Simple PHP framework Bricks</summary>
+  <description>
+    <p>
+      Addon components for EasePHP Framework ApiGen html documentation for ease-framework php library
+    </p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">http://v.s.cz/ease.php</url>
+  <developer id="cz.vitexsoftware">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+</component>
