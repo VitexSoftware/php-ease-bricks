@@ -30,7 +30,7 @@ def branches = [:]
 distributions.each { distro ->
     branches[distro] = {
         def (distroFamily, distroCode) = distro.split(':')
-        def imageName = "${vendor}/${imagePrefix}${distroCode}:latest"
+        def imageName = "${vendor}/${imagePrefix}${distroFamily}:${distroCode}"
         def buildImage
         def artifacts = []
         def buildVer
@@ -53,7 +53,9 @@ distributions.each { distro ->
                         sh """
                             dch -b -v ${buildVer} "${env.BUILD_TAG}"
                             sudo apt-get update --allow-releaseinfo-change
-                            sudo chown jenkins:jenkins ..
+                            sudo DEBIAN_FRONTEND=noninteractive apt-get -y install pkg-php-tools || true
+                            sudo chown -R jenkins:jenkins . ..
+                            sudo rm -rf debian/\$(dpkg-parsechangelog --show-field Source)/ debian/.debhelper/ debian/tmp/
                             debuild-pbuilder -i -us -uc -b
                             mkdir -p \$WORKSPACE/dist/debian/
                             rm -rf \$WORKSPACE/dist/debian/*
@@ -78,6 +80,7 @@ distributions.each { distro ->
                             cd \$WORKSPACE
                             echo "deb [trusted=yes] file://///\$WORKSPACE/dist/debian/ ./" | sudo tee /etc/apt/sources.list.d/local.list
                             sudo apt-get update --allow-releaseinfo-change
+                            sudo DEBIAN_FRONTEND=noninteractive apt-get -y install composer-debian multiflexi-sqlite || true
                         """
                         artifacts.each { deb_file ->
                             if (deb_file.endsWith('.deb')) {
