@@ -1,3 +1,5 @@
 src/Ease/*.php          /usr/share/php/EaseBricks
 src/Ease/ui/*.php       /usr/share/php/EaseBricks/ui
 debian/composer.json    /usr/share/php/EaseBricks
+php-vitexsoftware-ease-bricks.svg	usr/share/icons/hicolor/scalable/apps/
+io.github.vitexsoftware.php_vitexsoftware_ease_bricks.metainfo.xml	usr/share/metainfo/
