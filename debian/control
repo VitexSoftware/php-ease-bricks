@@ -1,5 +1,5 @@
 Source: php-vitexsoftware-ease-bricks
-Build-Depends: debhelper (>= 7.0.50~), phpdocumentor
+Build-Depends: debhelper (>= 7.0.50~), phpdocumentor, jq, moreutils
 Standards-Version: 4.3.0
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
